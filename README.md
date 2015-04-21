@@ -1,2 +1,2 @@
 # missed-connections
-Personal Project using old Twitter API
+Personal Project built in 2011, using old Twitter API
