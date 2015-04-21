@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Missed Connections - A Harry Fong Experiment</title>
+
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="jScrollPane/jScrollPane.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="jScrollPane/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="jScrollPane/jScrollPane-1.2.3.min.js"></script>
+<script type="text/javascript" src="jquery.form.js"></script> 
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript" src="script.js"></script>
+
+
+<!--[if lt IE 7]>
+<style type="text/css">
+div.tweet {
+	background:none;
+    border:none;
+}
+
+div#twitIcon{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=img/twitter_64.png, sizingMethod=crop);
+}
+
+div#twitIcon img{
+	display:none;
+}
+</style>
+<![endif]-->
+
+</head>
+<body>
+
+<div id="main"> 
+ 	<div id="twitter-ticker">
+        <div id="top-bar">   
+            <h2 class="tut">Missed Connections</h2>
+        </div>        
+        <div id="form_area">
+        	<form id="myForm" action="search.php" method="post"> 
+                <input type="text" name="Search"/>
+                Enter Location:
+                <input type="text" name="Location"/> 
+               
+                <input type="checkbox" name="Gender[]" value="m4m"  /> m4m
+                <input type="checkbox" name="Gender[]" value="m4w"  /> m4w
+                <input type="checkbox" name="Gender[]" value="w4m" /> w4m
+                <input type="checkbox" name="Gender[]" value="w4w"  /> w4w
+                
+                <input type="submit" value="Search" /> 
+            </form>
+        </div>
+        <div id="tweet-container">
+            <img id="loading" src="img/loading.gif" width="16" height="11" alt="Loading.." />
+        </div>        
+        <div id="scroll"></div>
+   	</div>      
+</div>
+
+</body>
+</html>
